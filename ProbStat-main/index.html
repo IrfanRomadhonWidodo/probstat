@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram (Data Kategori)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./files/logo.png" alt="Logo" class="logo">
+        <h1>Histogram (Data Kategori)</h1>
+    </header>
+    <div class="input">
+        <textarea autofocus oninput="validation(this)" id="inputArea" placeholder="Separate with spaces"></textarea>
+        <input type="button" id="btn" value="Display">
+    </div>
+    <div class="output">
+        <table id="frequencyTable">
+            <!--Buat hasil frekuensi sama kelas-->
+        </table>
+        <table id="moreinfoTable">
+            <!-- Buat hasil tambahan kayak mean, interval, bla bla bla -->
+        </table>
+        <div class="histogramContainer">
+            <svg id="svg-bar" xmlns="http://www.w3.org/2000/svg" height='33vmin' width="120vmin">
+                <!-- Height of the bar represents the frequency -->
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

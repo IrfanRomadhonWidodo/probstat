@@ -1,0 +1,78 @@
+/* Input Area */
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputArea {
+    min-width: 60em;
+    max-width: 60em;
+    min-height: 10em;
+    max-height: 15em;
+}
+
+#btn {
+    color: black;
+    border: 2px solid #04AA6D; /* Green */
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Output Area */
+.output {
+    margin-top: 10vh;
+    position: relative;
+    display: flex;
+    min-height: 100vh; /* Ensure the container covers the entire viewport height */
+    flex: 1; /* Let the table container grow to fill available space */
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+}
+
+#frequencyTable, #moreinfoTable {
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 25px;
+    border: 1px solid #ccc; /* Add border for visualization */
+}
+th{
+    padding-bottom: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+td{
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border: 1px solid;
+}
+
+/* Histogram Part! */
+.histogramContainer {
+    margin-left: 50px; /* Add margin to separate it from the table */
+    min-height: 25vh;
+    display: flex;
+    transform: scaleY(-1);
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0000ff, #ffffff);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: rgba(42, 24, 237, 0.889);
+    margin: 0;
+}
+
+.logo {
+    height: 80px;
+}
